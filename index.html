@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniella Wright</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+</head>
+<body>
+    <header>
+        <!-- Navigation Section -->
+        <nav>
+            <div class="left">
+                <a href="#about-section">Daniella Wright</a>
+            </div>
+            <div class="right">
+                <a href="#about-section">About</a>
+                <a href="#projects-section">Projects</a>
+                <a href="#experience-section">Experience</a>
+                <a href="#skills-section">Skills</a>
+                <!-- <a href="#personal-section">Personal</a> -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about-section">
+        <h2>Hey! I'm Dani</h2>
+        <div class="headshot">
+            <picture>
+                <source srcset="images/webp/headshot.webp" type="image/webp">
+                <img src="images/headshot.png" alt="headshot">
+            </picture>
+        </div>
+        <div class="bio">
+            <p>Hey! I'm Dani, an undergraduate student at the University of Wisconsin-Madison majoring in Computer Science and Data Science. I'm passionate about software development and UX design!</p>
+            <br>
+            <p>Outside of academics, I enjoy playing 2D video games, building custom keyboards, and working on creative projects with Adobe software. I also love spending time with my two cats, Yemi and Blanca.</p>
+            <br>
+            <p>Feel free to email me at dani@daniellawright.com or wrightnogued@wisc.edu</p>
+        </div>
+        <!-- Social Links -->
+        <div class="social-links">        
+            <a href="https://www.linkedin.com/in/daniella-wright" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/daniellawright" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>      
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <div class="divider"></div>
+    <section id="projects-section">
+        <h2>Projects</h2>
+    
+        <!-- Projects Subsection -->
+        <div class="project-subsection">
+            <div #swiperRef="" class="swiper card-swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://github.com/daniellawright" target="_blank" class="project-box">
+                        <picture>
+                            <source srcset="images/webp/coming-soon.webp" type="image/webp">
+                            <img src="images/coming-soon.png" alt="Coming soon">
+                        </picture>
+                        <h4>Agouti Adventures</h4>
+                        <h5><em>Java</em></h5>
+                        <p>Agouti Adventures is a 2D game built in Java. Inspired by the cute animal native to my hometown, players can explore my neighborhood as an agouti.</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/daniellawright" target="_blank" class="project-box">
+                        <picture>
+                            <source srcset="images/webp/coming-soon.webp" type="image/webp">
+                            <img src="images/coming-soon.png" alt="Coming soon">
+                        </picture>
+                        <h4>Prism</h4>
+                        <h5><em>Unity, C#</em></h5>
+                        <p>Prism is a 3D puzzle game developed using Unity and C#. Players must rotate and align color-coded pieces to complete geometrical figures.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <div class="divider"></div>
+    <section id="experience-section">
+        <h2>Experience</h2>
+        <div class="experience-container">
+
+            <!-- Research Assistant -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <h3 class="experience-title">Research Assistant</h3>
+                    <p class="experience-date">Oct 2025 - Present</p>
+                </div>
+                <h4 class="experience-company">Solis-Lemus Lab @ Morgridge Institute for Research</h4>
+                <ul class="experience-description">
+                    <li>Contribute to the development of software tools for analyzing relationships among microbial communities</li>
+                    <li>Develop and document code for data analysis and visualization in R and Python</li>
+                    <li>Collaborate with a team of undergraduate, graduate, and PhD students to conduct computational biology research focused on phylogenetic modeling</li>
+                </ul>
+            </div>
+            
+            <!-- Software Technology Trainer -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <h3 class="experience-title">Student Technology Trainer</h3>
+                    <p class="experience-date">Nov 2024 - Present</p>
+                </div>
+                <h4 class="experience-company">Software Training for Students @ UW-Madison DoIT</h4>
+                <ul class="experience-description">
+                    <li>Provide one-on-one tutoring and technical support to students on a variety of software and programming topics</li>
+                    <li>Lead workshops and assist college courses on web development, programming, and design software</li>
+                    <li>Develop webpages using HTML, CSS, and WordPress to create guides that help students learn software tools</li>
+                </ul>
+            </div>
+
+            <!-- Content Creator (Tutoriales de Dani) -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <h3 class="experience-title">Content Creator</h3>
+                    <p class="experience-date">May 2023 - Present</p>
+                </div>
+                <h4 class="experience-company">Tutoriales de Dani @ YouTube</h4>
+                <ul class="experience-description">
+                    <li>Developed step-by-step video tutorials in Spanish on professional software tools, tailored to beginner and intermediate learners, generating over 500,000+ views</li>
+                </ul>
+            </div>            
+
+            <!-- Web Designer -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <h3 class="experience-title">Web Designer</h3>
+                    <p class="experience-date">Feb 2023</p>
+                </div>
+                <h4 class="experience-company">Treasurehunting.tv</h4>
+                <ul class="experience-description">
+                    <li>Redesigned website architecture and interface using WordPress for improved user experience and accessibility</li>
+                    <li>Improved search visibility and metadata by optimizing meta titles, descriptions, and header tags</li>
+                    <li>Implemented internal linking and alt text for images to guide users to related content and improve SEO</li>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Experience Section -->
+    <div class="divider"></div>
+    <section id="experience-section">
+        <h2>Additional Experience</h2>
+        <div class="experience-container">
+
+            <!-- Content Creator (Magenta Media) -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <h3 class="experience-title">Content Creator</h3>
+                    <p class="experience-date">Nov 2022 - Present</p>
+                </div>
+                <h4 class="experience-company">Magenta Media @ YouTube</h4>
+                <ul class="experience-description">
+                    <li>Conduct research on trending topics and create a script with a storyline</li>
+                    <li>Compile media and voiceover into an engaging video, add effects using Adobe Premiere Pro and After Effects</li>
+                    <li>Gained 160,000+ subscribers and 120,000,000+ views</li>
+                </ul>
+            </div>
+            
+            <!-- Sticker Competition -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <h3 class="experience-title">Graphic Designer</h3>
+                    <p class="experience-date">Sep 2025</p>
+                </div>
+                <h4 class="experience-company">School of Computer, Data, & Information Sciences</h4>
+                <ul class="experience-description">
+                    <li>Chosen as one of the winners of the sticker competition celebrating the grand opening of Morgridge Hall, the new home of the School of Computer, Data & Information Sciences at the University of Wisconsin-Madison</li>
+                </ul>
+            </div>
+
+            <!-- Marketing Coordinator -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <h3 class="experience-title">Marketing Coordinator</h3>
+                    <p class="experience-date">Nov 2022 - Aug 2024</p>
+                </div>
+                <h4 class="experience-company">Cancuncare</h4>
+                <ul class="experience-description">
+                    <li>Consistently created infographics to promote resorts and tourist activities in Cancun for Cancuncare</li>
+                    <li>Distributed deliverables on social media including a monthly email newsletter to 8,000+ recipients resulting in increased exposure</li>
+                    <li>Filtered and maintained a clean recipient list ensuring an engaged audience profile</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <div class="divider"></div>
+    <section id="skills-section">
+        <h2>Programming Skills</h2>
+        <div class="skills-container">
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-java"></i>
+            <!-- <i class="fa-brands fa-figma"></i> -->
+            <i class="fa-brands fa-git-alt"></i>
+            <i class="fa-brands fa-github-alt"></i>
+            <i class="devicon-r-plain"></i>
+            <!-- <i class="devicon-unity-plain"></i> -->
+            <!-- <i class="devicon-csharp-plain"></i> -->
+            <!-- <i class="devicon-c-plain-wordmark"></i> -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <div class="divider"></div>
+    <section id="skills-section">
+        <h2>Design Tools</h2>
+        <div class="skills-container">
+            <i class="devicon-wordpress-plain"></i>
+            <i class="devicon-illustrator-plain"></i>
+            <i class="devicon-photoshop-plain"></i>
+            <i class="devicon-premierepro-plain"></i>
+            <i class="devicon-aftereffects-plain"></i>
+        </div>
+    </section>
+
+    <!-- Personal Section
+    <div class="divider"></div>
+    <section id="personal-section">
+        <h2>Personal</h2>
+        <p>Write content here and enable "personal" in the navigation section</p>
+        </div>
+    </section> -->
+
+    <!-- Swiper JS -->
+    <footer>
+        <p>&copy; <span id="year"></span> Daniella Wright. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Automatically update the copyright year
+            document.getElementById('year').textContent = new Date().getFullYear();
+    
+            // Initialize Swiper
+            const swiper = new Swiper(".card-swiper", {
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: 'auto'
+            });
+        });
+    </script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 ### Use my personal website as a template: 
 
 - Clone this repository: `git clone https://github.com/daniellawright/personal-website`
-- Open `index.html` and customize with your content!
+- Open `index.html` and customize with your content 🤓
 
 ---
 
@@ -11,4 +11,4 @@
 
 ---
 
-### 💡 My website is live at: [**daniellawright.com**](https://daniellawright.com)!
+### 💡 My website is live at: [**daniellawright.com**](https://daniellawright.com)

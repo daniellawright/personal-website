@@ -223,13 +223,12 @@ section h2::after {
     gap: 1.5rem;
     padding: 1000rem;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     overflow-x: auto;
     margin: 0 auto;
 }
 
 .project-box {
-    flex: 0 0 25rem; /* Fixed width for the boxes */
     text-align: center;
     border: 1px solid #d7dbd8;
     border-radius: 0.5rem;
@@ -246,7 +245,7 @@ section h2::after {
 
 .project-box img {
     width: 100%;
-    height: 12rem;
+    height: 15rem;
     object-fit: cover;
     border-radius: 0.25rem;
     margin-bottom: 0.75rem;
@@ -430,14 +429,14 @@ footer {
 
 .swiper-slide {
     width: 450px !important; /* This sets the slide/box height (match values)*/
-    height: 500px; /* This sets the slide/box height (match values)*/
+    height: 460px; /* This sets the slide/box height (match values)*/
 }
 
 .swiper-slide > a {
     display: block;
     transform: scale(0.9);
     width: 450px; /* This sets the slide/box width (match values)*/
-    height: 500px; /* This sets the slide/box height (match values)*/
+    height: 460px; /* This sets the slide/box height (match values)*/
 }
 
 

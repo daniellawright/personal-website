@@ -36,6 +36,7 @@
                 <a href="#about-section">About</a>
                 <a href="#projects-section">Projects</a>
                 <a href="#experience-section">Experience</a>
+                <a href="#featured-section">Featured</a>
                 <a href="#skills-section">Skills</a>
                 <!-- <a href="#personal-section">Personal</a> -->
             </div>
@@ -52,21 +53,113 @@
             </picture>
         </div>
         <div class="bio">
-            <p>Hey! I'm Dani, an undergraduate student at the University of Wisconsin-Madison majoring in Computer Science and Data Science. I'm passionate about software development and design!</p>
+            <p>Hey! I'm Dani, an undergraduate student at the University of Wisconsin-Madison studying Computer Science and Data Science, with a Graphic Design certificate.</p>
+            <br>
+            <p>I enjoy building tools that combine software, data, research, and design. I am especially interested in research computing, computational biology, and UX design!</p>
             <br>
             <p>Outside of academics, I enjoy playing 2D video games and working on creative projects with Adobe software. I also love spending time with my two cats, Yemi and Blanca.</p>
-            <br>
-            <p>Feel free to email me at dani@daniellawright.com or wrightnogueda@wisc.edu</p>
         </div>
-        <!-- Social Links -->
-        <div class="social-links">        
-            <a href="https://www.linkedin.com/in/daniella-wright" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/daniellawright" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>      
+
+    <!-- Memories Reel -->
+    <div class="about-drawer">
+    <button class="drawer-toggle" type="button">
+        <span>Some of my favorite memories</span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <div class="drawer-content">
+        <div class="memory-reel">
+            <div class="memory-track">
+
+                <div class="memory-frame">
+                <img src="images/islamujeres.jpeg" alt="Isla-Mujeres">
+                <div class="memory-caption">
+                <p class="memory-text">Isla Mujeres, Punta Sur</p>
+                <p class="memory-date">December 2023</p>
+                </div>
+                </div>
+
+                <div class="memory-frame">
+                <img src="images/yemi4.jpeg" alt="Yemi">
+                <div class="memory-caption">
+                <p class="memory-text">Yemi at home</p>
+                <p class="memory-date">August 2024</p>
+                </div>
+                </div>
+
+                <div class="memory-frame">
+                <img src="images/madison2.jpeg" alt="Madison">
+                <div class="memory-caption">
+                <p class="memory-text">Camp Randall Stadium</p>
+                <p class="memory-date">November 2025</p>
+                </div>
+                </div>
+
+                <div class="memory-frame">
+                <img src="images/playaislablanca.jpeg" alt="Playa Isla Blanca">
+                <div class="memory-caption">
+                <p class="memory-text">Playa Isla Blanca</p>
+                <p class="memory-date">May 2025</p>
+                </div>
+                </div>
+
+                <div class="memory-frame">
+                <img src="images/blanca3.jpeg" alt="Blanca">
+                <div class="memory-caption">
+                <p class="memory-text">Blanca is mewing</p>
+                <p class="memory-date">May 2025</p>
+                </div>
+                </div>
+
+                <div class="memory-frame">
+                <img src="images/nottingham.jpeg" alt="Nottingham">
+                <div class="memory-caption">
+                <p class="memory-text">Nottingham City Centre</p>
+                <p class="memory-date">July 2024</p>
+                </div>
+                </div>
+
+                <div class="memory-frame">
+                <img src="images/blanca2.jpeg" alt="Blanca">
+                <div class="memory-caption">
+                <p class="memory-text">Blanca is tired</p>
+                <p class="memory-date">May 2023</p>
+                </div>
+                </div>
+                
+                <div class="memory-frame">
+                <img src="images/art102.jpg" alt="Art102">
+                <div class="memory-caption">
+                <p class="memory-text">Pattern for Art 102</p>
+                <p class="memory-date">February 2026</p>
+                </div>
+                </div>
+
+                <div class="memory-frame">
+                <img src="images/yemi1.jpeg" alt="Yemi">
+                <div class="memory-caption">
+                <p class="memory-text">Yemi at home</p>
+                <p class="memory-date">May 2023</p>
+                </div>
+                </div>
+
+            </div>
         </div>
+    </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">        
+    <a href="https://www.linkedin.com/in/daniella-wright" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/daniellawright" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="mailto:wrightnogueda@wisc.edu" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+    </a> 
+    </div>
     </section>
 
     <!-- Projects Section -->
@@ -76,9 +169,20 @@
     
         <!-- Projects Subsection -->
         <div class="project-subsection">
-            <div #swiperRef="" class="swiper card-swiper">
+            <div class="swiper card-swiper">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">
+                    <a href="https://github.com/solislemuslab/gof-microbiome-networks" target="_blank" class="project-box">
+                        <picture>
+                            <source srcset="images/webp/gof-microbiome.webp" type="image/webp">
+                            <img src="images/gof-microbiome.png" alt="GOF network models project preview">
+                        </picture>
+                        <h4>GOF Microbiome Networks</h4>
+                        <h5><em>R</em></h5>
+                        <p>Developing and analyzing goodness-of-fit network models for microbiome systems as part of the Solis-Lemus Lab.</p>
+                    </a>
+                </div>
+                    <div class="swiper-slide">
                     <a href="https://github.com/daniellawright/agouti-adventures" target="_blank" class="project-box">
                         <picture>
                             <source srcset="images/webp/coming-soon.webp" type="image/webp">
@@ -110,10 +214,34 @@
         <h2>Experience</h2>
         <div class="experience-container">
 
-            <!-- Research Assistant -->
+            <!-- CHTC Fellowship -->
             <div class="experience-box">
                 <div class="experience-header">
+                    <div class="experience-title-group">
+                    <a href="https://chtc.cs.wisc.edu/" target="_blank">
+                    <img src="images/icon-CHTC.svg" alt="CHTC logo" class="experience-logo">
+                    </a>
+                    <h3 class="experience-title">Computing Facilitation Fellow</h3>
+                </div>
+                    <p class="experience-date">Jun 2026 - Present</p>
+                </div>
+                <h4 class="experience-company">The Center for High Throughput Computing (CHTC)</h4>
+                <ul class="experience-description">
+                    <li>Develop web-based documentation systems supporting distributed and high throughput computing services</li>
+                    <li>Analyze computing workflows to implement features improving transparency around job scheduling and processing expectations</li>
+                    <li>Identify user experience gaps in technical documentation and design solutions for communicating distributed computing concepts</li>
+                </ul>
+            </div>
+
+            <!-- Lab Member -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                    <a href="https://chtc.cs.wisc.edu/" target="_blank">
+                    <img src="images/icon-WID.svg" alt="CHTC logo" class="experience-logo">
+                    </a>
                     <h3 class="experience-title">Research Assistant</h3>
+                </div>
                     <p class="experience-date">Oct 2025 - Present</p>
                 </div>
                 <h4 class="experience-company">Solis-Lemus Lab @ Wisconsin Institute for Discovery</h4>
@@ -124,94 +252,62 @@
                 </ul>
             </div>
             
-            <!-- Software Technology Trainer -->
-            <div class="experience-box">
+          <!-- Software Technology Trainer -->
+          <div class="experience-box">
                 <div class="experience-header">
-                    <h3 class="experience-title">Student Technology Trainer</h3>
+                    <div class="experience-title-group">
+                    <a href="https://sts.doit.wisc.edu" target="_blank">
+                    <img src="images/icon-STS.svg" alt="CHTC logo" class="experience-logo">
+                    </a>
+                    <h3 class="experience-title">Student Software Trainer</h3>
+                </div>
                     <p class="experience-date">Nov 2024 - Present</p>
                 </div>
-                <h4 class="experience-company">Software Training for Students @ UW-Madison DoIT</h4>
+                <h4 class="experience-company">Software Training for Students @ UW–⁠Madison Information Technology</h4>
                 <ul class="experience-description">
                     <li>Provide one-on-one tutoring and technical support to students on a variety of software and programming topics</li>
                     <li>Lead workshops and assist college courses on web development, programming, and design software</li>
                     <li>Develop webpages using HTML, CSS, and WordPress to create guides that help students learn software tools</li>
                 </ul>
             </div>
-
-            <!-- Content Creator (Tutoriales de Dani) -->
-            <div class="experience-box">
-                <div class="experience-header">
-                    <h3 class="experience-title">Content Creator</h3>
-                    <p class="experience-date">May 2023 - Present</p>
-                </div>
-                <h4 class="experience-company">Tutoriales de Dani @ YouTube</h4>
-                <ul class="experience-description">
-                    <li>Developed step-by-step video tutorials in Spanish on professional software tools, tailored to beginner and intermediate learners, generating over 500,000+ views</li>
-                </ul>
-            </div>            
-
-            <!-- Web Designer -->
-            <div class="experience-box">
-                <div class="experience-header">
-                    <h3 class="experience-title">Web Designer</h3>
-                    <p class="experience-date">Feb 2023</p>
-                </div>
-                <h4 class="experience-company">Treasurehunting.tv</h4>
-                <ul class="experience-description">
-                    <li>Redesigned website architecture and interface using WordPress for improved user experience and accessibility</li>
-                    <li>Improved search visibility and metadata by optimizing meta titles, descriptions, and header tags</li>
-                    <li>Implemented internal linking and alt text for images to guide users to related content and improve SEO</li>
-            </div>
         </div>
     </section>
 
-    <!-- Additional Experience Section -->
+    <!-- Featured Section -->
     <div class="divider"></div>
-    <section id="experience-section">
-        <h2>Additional Experience</h2>
-        <div class="experience-container">
+    <section id="featured-section">
+    <h2>Featured</h2>
 
-            <!-- Content Creator (Magenta Media) -->
-            <div class="experience-box">
-                <div class="experience-header">
-                    <h3 class="experience-title">Content Creator</h3>
-                    <p class="experience-date">Nov 2022 - Present</p>
-                </div>
-                <h4 class="experience-company">Magenta Media @ YouTube</h4>
-                <ul class="experience-description">
-                    <li>Conduct research on trending topics and create a script with a storyline</li>
-                    <li>Compile media and voiceover into an engaging video, add effects using Adobe Premiere Pro and After Effects</li>
-                    <li>Gained 160,000+ subscribers and 120,000,000+ views</li>
-                </ul>
-            </div>
-            
-            <!-- Sticker Competition -->
-            <div class="experience-box">
-                <div class="experience-header">
-                    <h3 class="experience-title">Graphic Designer</h3>
-                    <p class="experience-date">Sep 2025</p>
-                </div>
-                <h4 class="experience-company">School of Computer, Data, & Information Sciences</h4>
-                <ul class="experience-description">
-                    <li>Chosen as one of the winners of the sticker competition celebrating the grand opening of Morgridge Hall, the new home of the School of Computer, Data & Information Sciences at the University of Wisconsin-Madison</li>
-                </ul>
-            </div>
+    <div class="scrapbook-board">
 
-            <!-- Marketing Coordinator -->
-            <div class="experience-box">
-                <div class="experience-header">
-                    <h3 class="experience-title">Marketing Coordinator</h3>
-                    <p class="experience-date">Nov 2022 - Aug 2024</p>
-                </div>
-                <h4 class="experience-company">Cancuncare</h4>
-                <ul class="experience-description">
-                    <li>Consistently created infographics to promote resorts and tourist activities in Cancun for Cancuncare</li>
-                    <li>Distributed deliverables on social media including a monthly email newsletter to 8,000+ recipients resulting in increased exposure</li>
-                    <li>Filtered and maintained a clean recipient list ensuring an engaged audience profile</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        <!-- Tracing Life's Hidden Histories -->
+        <a href="https://stat.wisc.edu/2026/04/14/tracing-lifes-hidden-histories/" 
+           target="_blank" 
+           class="scrapbook-card card-tilt-left">
+
+            <span class="tape"></span>
+            <img src="images/icon-statistics.svg" alt="UW Statistics logo" class="featured-logo">
+
+            <h3>Tracing Life’s Hidden Histories</h3>
+            <p>Featured by UW–Madison Statistics for work connected to computational biology and microbiome research.</p>
+            <span class="read-more">Read article →</span>
+        </a>
+
+        <!-- Morgridge Hall Sticker -->
+        <a href="https://cdis.wisc.edu/meet-the-winners-of-the-morgridge-hall-sticker-competition/" 
+           target="_blank" 
+           class="scrapbook-card card-tilt-right">
+
+            <span class="tape"></span>
+            <img src="images/icon-CDIS.svg" alt="CDIS logo" class="featured-logo">
+
+            <h3>Morgridge Hall Sticker Competition</h3>
+            <p>Selected as one of the winners of the School of Computer, Data and Information Sciences sticker competition celebrating the opening of Morgridge Hall.</p>
+            <span class="read-more">View feature →</span>
+        </a>
+
+    </div>
+</section>
 
     <!-- Skills Section -->
     <div class="divider"></div>
@@ -227,6 +323,99 @@
             <!-- <i class="devicon-unity-plain"></i> -->
             <!-- <i class="devicon-csharp-plain"></i> -->
             <i class="devicon-c-plain-wordmark"></i>
+        </div>
+    </section>
+
+    <!-- Additional Experience Section -->
+    <div class="divider"></div>
+    <section id="experience-section">
+        <h2>Additional Experience</h2>
+        <div class="experience-container">
+
+            <!-- Content Creator (Tutoriales de Dani) -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                    <a href="https://www.youtube.com/@tutorialesdedani" target="_blank">
+                    <img src="images/icon-youtube.svg" alt="YouTube logo" class="experience-logo">
+                    </a>
+                    <h3 class="experience-title">Content Creator</h3>
+                    </div>
+                    <p class="experience-date">May 2023 - Present</p>
+                </div>
+                <h4 class="experience-company">Tutoriales de Dani @ YouTube</h4>
+                <ul class="experience-description">
+                    <li>Developed step-by-step video tutorials in Spanish on professional software tools, tailored to beginner and intermediate learners, generating over 500,000+ views</li>
+                </ul>
+            </div>
+
+            <!-- Web Designer -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <h3 class="experience-title">Web Designer</h3>
+                    <p class="experience-date">Feb 2023</p>
+                </div>
+                <h4 class="experience-company">Treasurehunting.tv</h4>
+                <ul class="experience-description">
+                    <li>Redesigned website architecture and interface using WordPress for improved user experience and accessibility</li>
+                    <li>Improved search visibility and metadata by optimizing meta titles, descriptions, and header tags</li>
+                    <li>Implemented internal linking and alt text for images to guide users to related content and improve SEO</li>
+            </div>
+
+            <!-- Content Creator (Magenta Media) -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                    <a href="https://www.youtube.com/@magentamedia" target="_blank">
+                    <img src="images/icon-youtube.svg" alt="YouTube logo" class="experience-logo">
+                    </a>
+                    <h3 class="experience-title">Content Creator</h3>
+                    </div>
+                    <p class="experience-date">Nov 2022 - Present</p>
+                </div>
+                <h4 class="experience-company">Magenta Media @ YouTube</h4>
+                <ul class="experience-description">
+                    <li>Conduct research on trending topics and create a script with a storyline</li>
+                    <li>Compile media and voiceover into an engaging video, add effects using Adobe Premiere Pro and After Effects</li>
+                    <li>Gained 160,000+ subscribers and 120,000,000+ views</li>
+                </ul>
+            </div>
+            
+            <!-- Sticker Competition -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                    <a href="https://www.instagram.com/p/DQm0PhxASBH/?img_index=1" target="_blank">
+                    <img src="images/icon-uwmadison.svg" alt="UW-Madison logo" class="experience-logo">
+                    </a>
+                    <h3 class="experience-title">Graphic Designer</h3>
+                    </div>
+                    <p class="experience-date">Sep 2025</p>
+                </div>
+                <h4 class="experience-company">School of Computer, Data, & Information Sciences</h4>
+                <ul class="experience-description">
+                    <li>Chosen as one of the winners of the sticker competition celebrating the grand opening of Morgridge Hall, the new home of the School of Computer, Data & Information Sciences at the University of Wisconsin-Madison</li>
+                </ul>
+            </div>
+
+            <!-- Marketing Coordinator -->
+            <div class="experience-box">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                    <a href="https://www.cancuncare.com/" target="_blank">
+                    <img src="images/icon-cancuncare.svg" alt="Cancuncare logo" class="experience-logo">
+                    </a>
+                    <h3 class="experience-title">Marketing Coordinator</h3>
+                    </div>
+                    <p class="experience-date">Nov 2022 - Aug 2024</p>
+                </div>
+                <h4 class="experience-company">Cancuncare</h4>
+                <ul class="experience-description">
+                    <li>Consistently created infographics to promote resorts and tourist activities in Cancun for Cancuncare</li>
+                    <li>Distributed deliverables on social media including a monthly email newsletter to 8,000+ recipients resulting in increased exposure</li>
+                    <li>Filtered and maintained a clean recipient list ensuring an engaged audience profile</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -268,6 +457,14 @@
                 spaceBetween: 0,
                 slidesPerView: 'auto'
             });
+            const drawerToggle = document.querySelector(".drawer-toggle");
+            const aboutDrawer = document.querySelector(".about-drawer");
+
+            if (drawerToggle && aboutDrawer) {
+            drawerToggle.addEventListener("click", function () {
+            aboutDrawer.classList.toggle("open");
+            });
+            }
         });
     </script>
   </body>

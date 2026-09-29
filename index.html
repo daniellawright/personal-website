@@ -8,474 +8,497 @@
  ( (  )   (  ) )
 (__(__)___(__)__)
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniella Wright</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portfolio of Daniella Wright Nogueda — computer science, data science, research computing, and graphic design."
+  />
+  <title>Daniella Wright Nogueda</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="skills.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <!-- Navigation Section -->
-        <nav>
-            <div class="left">
-                <a href="#about-section">Daniella Wright</a>
-            </div>
-            <div class="right">
-                <a href="#about-section">About</a>
-                <a href="#projects-section">Projects</a>
-                <a href="#experience-section">Experience</a>
-                <a href="#featured-section">Featured</a>
-                <a href="#skills-section">Skills</a>
-                <!-- <a href="#personal-section">Personal</a> -->
-            </div>
-        </nav>
-    </header>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Go to top">DW</a>
 
-    <!-- About Section -->
-    <section id="about-section">
-        <h2>Hey! I'm Dani</h2>
-        <div class="headshot">
-            <picture>
-                <source srcset="images/webp/headshot.webp" type="image/webp">
-                <img src="images/headshot.png" alt="headshot">
-            </picture>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#featured">Featured</a>
+      <a href="#skills">Skills</a>
+      <a href="#design">Design</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="hero-details">
+        <div class="hero-copy">
+          <h1>Daniella <span>Wright</span></h1>
+          <p class="hero-intro">
+            Hola! I'm an undergraduate student at the University of Wisconsin-Madison studying
+            Computer Science and Data Science, with a Graphic Design certificate.
+            This space is a collection of the work, projects, and ideas I have contributed to so far.
+          </p>
+
+          <nav class="hero-links" aria-label="Connect with Daniella">
+            <a class="social-link" href="https://www.linkedin.com/in/daniella-wright" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+              <img class="social-icon" src="images/icon-github.svg" alt="" width="40" height="40" />
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/yourusername/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+              <img class="social-icon" src="images/icon-linkedin.svg" alt="" width="40" height="40" />
+            </a>
+            <a class="social-link" href="mailto:wrightnogueda@wisc.edu" aria-label="Email Daniella" title="Email">
+              <img class="social-icon" src="images/icon-email.svg" alt="" width="40" height="40" />
+            </a>
+          </nav>
         </div>
-        <div class="bio">
-            <p>Hey! I'm Dani, an undergraduate student at the University of Wisconsin-Madison studying Computer Science and Data Science, with a Graphic Design certificate.</p>
-            <br>
-            <p>I enjoy building tools that combine software, data, research, and design. I am especially interested in research computing, computational biology, and UX design!</p>
-            <br>
-            <p>Outside of academics, I enjoy playing 2D video games and working on creative projects with Adobe software. I also love spending time with my two cats, Yemi and Blanca.</p>
+
+        <div class="headshot-wrap">
+          <img
+            class="headshot"
+            src="images/headshot.jpg"
+            alt="Portrait of Daniella Wright Nogueda"
+          />
+          <span class="portrait-frame" aria-hidden="true">
+            <span class="portrait-wave"></span><span class="portrait-wave"></span>
+            <span class="portrait-wave"></span><span class="portrait-wave"></span>
+          </span>
         </div>
-
-    <!-- Memories Reel -->
-    <div class="about-drawer">
-    <button class="drawer-toggle" type="button">
-        <span>Some of my favorite memories</span>
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="drawer-content">
-        <div class="memory-reel">
-            <div class="memory-track">
-
-                <div class="memory-frame">
-                <img src="images/islamujeres.jpeg" alt="Isla-Mujeres">
-                <div class="memory-caption">
-                <p class="memory-text">Isla Mujeres</p>
-                <p class="memory-date">December 2023</p>
-                </div>
-                </div>
-
-                <div class="memory-frame">
-                <img src="images/yemi5.jpeg" alt="Yemi">
-                <div class="memory-caption">
-                <p class="memory-text">Yemi</p>
-                <p class="memory-date">August 2024</p>
-                </div>
-                </div>
-
-                <div class="memory-frame">
-                <img src="images/madison2.jpeg" alt="Madison">
-                <div class="memory-caption">
-                <p class="memory-text">Camp Randall Stadium</p>
-                <p class="memory-date">November 2025</p>
-                </div>
-                </div>
-
-                <div class="memory-frame">
-                <img src="images/playaislablanca.jpeg" alt="Playa Isla Blanca">
-                <div class="memory-caption">
-                <p class="memory-text">Playa Isla Blanca</p>
-                <p class="memory-date">May 2025</p>
-                </div>
-                </div>
-
-                <div class="memory-frame">
-                <img src="images/nottingham.jpeg" alt="Nottingham">
-                <div class="memory-caption">
-                <p class="memory-text">Nottingham City Centre</p>
-                <p class="memory-date">July 2024</p>
-                </div>
-                </div>
-
-                <div class="memory-frame">
-                <img src="images/blanca4.jpeg" alt="Blanca">
-                <div class="memory-caption">
-                <p class="memory-text">Blanca sleeping</p>
-                <p class="memory-date">May 2023</p>
-                </div>
-                </div>
-                
-                <div class="memory-frame">
-                <img src="images/art102.jpg" alt="Art102">
-                <div class="memory-caption">
-                <p class="memory-text">Assignment for Art 102</p>
-                <p class="memory-date">February 2026</p>
-                </div>
-                </div>
-
-                <div class="memory-frame">
-                <img src="images/yemi1.jpeg" alt="Yemi">
-                <div class="memory-caption">
-                <p class="memory-text">Yemi at home</p>
-                <p class="memory-date">May 2023</p>
-                </div>
-                </div>
-                
-                <div class="memory-frame">
-                <img src="images/madison1.jpeg" alt="Frozen Lake Mendota">
-                <div class="memory-caption">
-                <p class="memory-text">Frozen Lake Mendota</p>
-                <p class="memory-date">January 2025</p>
-                </div>
-                </div>    
-                
-                <div class="memory-frame">
-                <img src="images/fluffy1.jpeg" alt="Frozen Lake Mendota">
-                <div class="memory-caption">
-                <p class="memory-text">My cat Fluffy</p>
-                <p class="memory-date">May 2025</p>
-                </div>
-                </div>                       
-
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- Social Links -->
-    <div class="social-links">        
-    <a href="https://www.linkedin.com/in/daniella-wright" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/daniellawright" target="_blank">
-        <i class="fa-brands fa-github"></i>
-    </a>
-    <a href="mailto:wrightnogueda@wisc.edu" aria-label="Email">
-        <i class="fa-solid fa-envelope"></i>
-    </a> 
-    </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <div class="divider"></div>
-    <section id="projects-section">
-        <h2>Projects</h2>
-    
-        <!-- Projects Subsection -->
-        <div class="project-subsection">
-            <div class="swiper card-swiper">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="https://github.com/solislemuslab/gof-microbiome-networks" target="_blank" class="project-box">
-                        <picture>
-                            <source srcset="images/webp/gof-microbiome.webp" type="image/webp">
-                            <img src="images/gof-microbiome.png" alt="GOF network models project preview">
-                        </picture>
-                        <h4>GOF Microbiome Networks</h4>
-                        <h5><em>R</em></h5>
-                        <p>Developing and analyzing goodness-of-fit network models for microbiome systems as part of the Solis-Lemus Lab.</p>
-                    </a>
-                </div>
-                    <div class="swiper-slide">
-                    <a href="https://github.com/daniellawright/agouti-adventures" target="_blank" class="project-box">
-                        <picture>
-                            <source srcset="images/webp/coming-soon.webp" type="image/webp">
-                            <img src="images/coming-soon.png" alt="Coming soon">
-                        </picture>
-                        <h4>Agouti Adventures</h4>
-                        <h5><em>Java</em></h5>
-                        <p>Agouti Adventures is a 2D game built in Java. Inspired by the cute animal native to my hometown, players can explore my neighborhood as an agouti.</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://github.com/daniellawright" target="_blank" class="project-box">
-                        <picture>
-                            <source srcset="images/webp/coming-soon.webp" type="image/webp">
-                            <img src="images/coming-soon.png" alt="Coming soon">
-                        </picture>
-                        <h4>Prism</h4>
-                        <h5><em>Unity, C#</em></h5>
-                        <p>Prism is a 3D puzzle game developed using Unity and C#. Players must rotate and align color-coded pieces to complete geometrical figures.</p>
-                    </a>
-                </div>
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-heading"><h2>Experience</h2></div>
+
+      <div class="experience-list">
+
+        <article class="experience-item">
+          <div class="experience-copy">
+            <div class="company-row">
+              <a class="company-logo-link" href="https://www.chtc.cs.wisc.edu/" target="_blank" rel="noopener noreferrer"><img class="company-logo" src="images/icon-CHTC.svg" alt="Center for High Throughput Computing logo" /></a>
+              <p class="company-name">Center for High Throughput Computing</p>
             </div>
-        </div>
+
+            <div class="role-row">
+              <h3>Fellow</h3>
+            </div>
+
+            <p class="experience-summary">
+              Worked on research computing documentation, usability, technical
+              graphics, interactive learning materials, and video tutorials. I
+              focused on helping users navigate complex computing concepts with
+              clearer explanations and more visual guidance.
+            </p>
+            <p class="experience-date"><time datetime="2026-06">June 2026</time> &ndash; <time datetime="2026-08">August 2026</time></p>
+          </div>
+
+          <div class="experience-gallery">
+            <div class="experience-carousel" aria-label="CHTC experience gallery">
+              <figure class="carousel-slide">
+                <img src="images/chtc-01.jpg" alt="CHTC staff team at HTCondor Week 2026" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/chtc-02.jpeg" alt="CHTC staff team at an outdoor gathering" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/chtc-03.jpg" alt="CHTC staff team along with OSG School attendees" />
+              </figure>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="experience-item">
+          <div class="experience-copy">
+            <div class="company-row">
+              <a class="company-logo-link" href="https://solislemuslab.github.io/" target="_blank" rel="noopener noreferrer"><img class="company-logo" src="images/icon-WID.svg" alt="Solis-Lemus Lab logo" /></a>
+              <p class="company-name">Solis-Lemus Lab</p>
+            </div>
+
+            <div class="role-row">
+              <h3>Research Assistant</h3>
+            </div>
+
+            <p class="experience-summary">
+              Work with biological network data and microbiome datasets using R,
+              graph representations, and reproducible analysis workflows.
+            </p>
+            <p class="experience-date"><time datetime="2025-10">October 2025</time> &ndash; Present</p>
+          </div>
+
+          <div class="experience-gallery">
+            <div class="experience-carousel" aria-label="Solis-Lemus Lab research gallery">
+              <figure class="carousel-slide">
+                <img src="images/research-01.jpg" alt="Network visualization on a projector" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/research-02.jpg" alt="Solis-Lemus Lab team" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/research-03.jpg" alt="Daniella Wright giving a presentation on networks" />
+              </figure>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="experience-item">
+          <div class="experience-copy">
+            <div class="company-row">
+              <a class="company-logo-link" href="https://sts.doit.wisc.edu/" target="_blank" rel="noopener noreferrer"><img class="company-logo" src="images/icon-STS.svg" alt="Software Training for Students logo" /></a>
+              <p class="company-name">Software Training for Students</p>
+            </div>
+
+            <div class="role-row">
+              <h3>Software Trainer</h3>
+            </div>
+
+            <p class="experience-summary">
+              Develop and teach software workshops, create technical training
+              materials, and design hands-on activities that make software and
+              programming concepts more approachable.
+            </p>
+            <p class="experience-date"><time datetime="2024-11">November 2024</time> &ndash; Present</p>
+          </div>
+
+          <div class="experience-gallery">
+            <div class="experience-carousel" aria-label="Software Training for Students gallery">
+              <figure class="carousel-slide">
+                <img src="images/sts-01.jpeg" alt="Software Training for Students Team" />
+              </figure>
+            </div>
+
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <div class="divider"></div>
-    <section id="experience-section">
-        <h2>Experience</h2>
-        <div class="experience-container">
 
-            <!-- CHTC Fellowship -->
-            <div class="experience-box">
-                <div class="experience-header">
-                    <div class="experience-title-group">
-                    <a href="https://chtc.cs.wisc.edu/" target="_blank">
-                    <img src="images/icon-CHTC.svg" alt="CHTC logo" class="experience-logo">
-                    </a>
-                    <h3 class="experience-title">Computing Facilitation Fellow</h3>
-                </div>
-                    <p class="experience-date">Jun 2026 - Aug 2026</p>
-                </div>
-                <h4 class="experience-company">Center for High Throughput Computing (CHTC)</h4>
-                <ul class="experience-description">
-                    <li>Analyzed technical documentation and support ticket data to identify clarity and usability issues in resources for high-throughput computing and HTCondor</li>
-                    <li>Developed interactive modules, technical graphics, and instructional content to make complex research computing concepts easier for researchers to understand and use</li>
-                    <li>Implemented website and interface improvements directly in the CHTC codebase using Git and GitHub workflow</li>
-                </ul>
-            </div>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-heading"><h2>Projects</h2></div>
 
-            <!-- Lab Member -->
-            <div class="experience-box">
-                <div class="experience-header">
-                    <div class="experience-title-group">
-                    <a href="https://solislemuslab.github.io" target="_blank">
-                    <img src="images/icon-WID.svg" alt="WID logo" class="experience-logo">
-                    </a>
-                    <h3 class="experience-title">Research Assistant</h3>
-                </div>
-                    <p class="experience-date">Oct 2025 - Present</p>
-                </div>
-                <h4 class="experience-company">Solis-Lemus Lab @ Wisconsin Institute for Discovery</h4>
-                <ul class="experience-description">
-                    <li>Contribute to the development of software tools for analyzing relationships among microbial communities</li>
-                    <li>Develop and document code for data analysis and visualization in R</li>
-                    <li>Collaborate with a team of undergraduate, graduate, and PhD students to conduct computational biology research focused on phylogenetic modeling</li>
-                </ul>
-            </div>
-            
-          <!-- Software Technology Trainer -->
-          <div class="experience-box">
-                <div class="experience-header">
-                    <div class="experience-title-group">
-                    <a href="https://sts.doit.wisc.edu" target="_blank">
-                    <img src="images/icon-STS.svg" alt="CHTC logo" class="experience-logo">
-                    </a>
-                    <h3 class="experience-title">Student Software Trainer</h3>
-                </div>
-                    <p class="experience-date">Nov 2024 - Present</p>
-                </div>
-                <h4 class="experience-company">Software Training for Students @ UW–⁠Madison Information Technology</h4>
-                <ul class="experience-description">
-                    <li>Provide one-on-one tutoring and technical support to students on a variety of software and programming topics</li>
-                    <li>Lead workshops and assist college courses on web development, programming, and design software</li>
-                    <li>Develop webpages using HTML, CSS, and WordPress to create guides that help students learn software tools</li>
-                </ul>
-            </div>
-        </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <a class="project-image-link" href="https://github.com/solislemuslab/gof-microbiome-networks" target="_blank" rel="noopener noreferrer">
+            <img src="images/gof-microbiome.png" alt="Goodness-of-fit Microbiome Models" />
+          </a>
+          <div class="project-body">
+            <p class="project-topics">Graph Theory<span> · </span>Microbiome science</p>
+            <h3>Goodness-of-fit Network Models to Microbiome</h3>
+            <p class="project-description">Evaluate how well common generative graph models capture the structure of real gut microbiome networks.</p>
+            <a class="project-github social-link" href="https://github.com/solislemuslab/gof-microbiome-networks" target="_blank" rel="noopener noreferrer" aria-label="View Goodness-of-fit Network Models to Microbiome on GitHub" title="View on GitHub">
+              <img class="social-icon" src="images/icon-github.svg" alt="" width="40" height="40" />
+            </a>
+          </div>
+        </article>
+
+        <!-- <article class="project-card">
+          <a class="project-image-link" href="https://github.com/yourusername/project-two" target="_blank" rel="noopener noreferrer">
+            <img src="images/project-02.jpg" alt="Project Two preview" />
+          </a>
+          <div class="project-body">
+            <p class="project-topics">TOPIC ONE <span>·</span> TOPIC TWO</p>
+            <h3>Project Two</h3>
+            <p class="project-description">A short description of the problem, your approach, and the result.</p>
+            <a class="project-github social-link" href="https://github.com/yourusername/project-two" target="_blank" rel="noopener noreferrer" aria-label="View Project Two on GitHub" title="View on GitHub">
+              <img class="social-icon" src="images/icon-github.svg" alt="" width="40" height="40" />
+            </a>
+          </div>
+        </article> -->
+      </div>
     </section>
 
-    <!-- Featured Section -->
-    <div class="divider"></div>
-    <section id="featured-section">
-    <h2>Featured</h2>
+    <!-- FEATURED -->
+    <section class="section" id="featured">
+      <div class="section-heading"><h2>Featured</h2></div>
 
-    <div class="scrapbook-board">
+      <div class="press-grid">
 
-        <!-- Tracing Life's Hidden Histories -->
-        <a href="https://stat.wisc.edu/2026/04/14/tracing-lifes-hidden-histories/" 
-           target="_blank" 
-           class="scrapbook-card card-tilt-left">
-
-            <span class="tape"></span>
-            <img src="images/icon-statistics.svg" alt="UW Statistics logo" class="featured-logo">
-
-            <h3>Tracing Life’s Hidden Histories</h3>
-            <p>Featured by UW–Madison Statistics for work connected to computational biology and microbiome research.</p>
-            <span class="read-more">Read article →</span>
+        <a class="press-card" href="https://chtc.cs.wisc.edu/mentoring-propels-fellows-success.html" target="_blank" rel="noopener noreferrer">
+          <div class="press-topline">
+            <span>THE PORTFOLIO PRESS</span>
+          </div>
+          <div class="press-image">
+            <img src="images/chtc-04.png" alt="CHTC fellows gathering outdoors" loading="lazy" width="640" height="360" />
+          </div>
+          <div class="press-content">
+            <div>
+              <p class="press-publisher">Center of High-Throughput Computing (CHTC)</p>
+              <h3>Mentoring Propels Success of CHTC Fellows</h3>
+            </div>
+            <span class="press-link">Read article <span aria-hidden="true">&#8599;</span></span>
+          </div>
         </a>
 
-        <!-- Morgridge Hall Sticker -->
-        <a href="https://cdis.wisc.edu/meet-the-winners-of-the-morgridge-hall-sticker-competition/" 
-           target="_blank" 
-           class="scrapbook-card card-tilt-right">
-
-            <span class="tape"></span>
-            <img src="images/icon-CDIS.svg" alt="CDIS logo" class="featured-logo">
-
-            <h3>Morgridge Hall Sticker Competition</h3>
-            <p>Selected as one of the winners of the School of Computer, Data and Information Sciences sticker competition celebrating the opening of Morgridge Hall.</p>
-            <span class="read-more">View feature →</span>
+        <a class="press-card" href="https://chtc.cs.wisc.edu/fellowships/reports/2026/daniella-wright" target="_blank" rel="noopener noreferrer">
+          <div class="press-topline">
+            <span>THE PORTFOLIO PRESS</span>
+          </div>
+          <div class="press-image">
+            <img src="images/bytes.png" alt="Bytes of Knowledge Project Report" loading="lazy" width="640" height="360" />
+          </div>
+          <div class="press-content">
+            <div>
+              <p class="press-publisher">Center of High-Throughput Computing (CHTC)</p>
+              <h3>CHTC Fellows Project - Bytes of Knowledge</h3>
+            </div>
+            <span class="press-link">Read article <span aria-hidden="true">↗</span></span>
+          </div>
         </a>
 
-    </div>
-</section>
+        <a class="press-card" href="https://stat.wisc.edu/2026/04/14/tracing-lifes-hidden-histories" target="_blank" rel="noopener noreferrer">
+          <div class="press-topline">
+            <span>THE PORTFOLIO PRESS</span>
+          </div>
+          <div class="press-image">
+            <img src="images/research-03.jpg" alt="Research presentation showing network models" loading="lazy" width="640" height="360" />
+          </div>
+          <div class="press-content">
+            <div>
+              <p class="press-publisher">Department of Statistics</p>
+              <h3>Tracing Life’s Hidden Histories</h3>
+            </div>
+            <span class="press-link">Read article <span aria-hidden="true">↗</span></span>
+          </div>
+        </a>
 
-    <!-- Skills Section -->
-    <div class="divider"></div>
-    <section id="skills-section">
-        <h2>Programming Skills</h2>
-        <div class="skills-container">
-            <i class="fa-brands fa-python"></i>
-            <i class="fa-brands fa-java"></i>
-            <!-- <i class="fa-brands fa-figma"></i> -->
-            <i class="fa-brands fa-git-alt"></i>
-            <i class="fa-brands fa-github-alt"></i>
-            <i class="devicon-r-plain"></i>
-            <!-- <i class="devicon-unity-plain"></i> -->
-            <!-- <i class="devicon-csharp-plain"></i> -->
-            <i class="devicon-c-plain-wordmark"></i>
-        </div>
+        <a class="press-card" href="https://cdis.wisc.edu/meet-the-winners-of-the-morgridge-hall-sticker-competition" target="_blank" rel="noopener noreferrer">
+          <div class="press-topline">
+            <span>THE PORTFOLIO PRESS</span>
+          </div>
+          <div class="press-image press-image--sticker">
+            <img src="images/morgridgehall-sticker.png" alt="Morgridge Hall sticker design with flowers surrounding the building" loading="lazy" width="640" height="360" />
+          </div>
+          <div class="press-content">
+            <div>
+              <p class="press-publisher">School of Computer, Data & Information Sciences</p>
+              <h3>Meet the Winners of the Morgridge Hall Sticker Competition</h3>
+            </div>
+            <span class="press-link">Read article <span aria-hidden="true">↗</span></span>
+          </div>
+        </a>
+      </div>
     </section>
 
-    <!-- Additional Experience Section -->
-    <div class="divider"></div>
-    <section id="experience-section">
-        <h2>Additional Experience</h2>
-        <div class="experience-container">
+    <!-- SKILLS
+    <section class="section skills-section" id="skills">
+      <div class="section-heading"><h2>Skills</h2></div>
 
-            <!-- Content Creator (Tutoriales de Dani) -->
-            <div class="experience-box">
-                <div class="experience-header">
-                    <div class="experience-title-group">
-                    <a href="https://www.youtube.com/@tutorialesdedani" target="_blank">
-                    <img src="images/icon-youtube.svg" alt="YouTube logo" class="experience-logo">
-                    </a>
-                    <h3 class="experience-title">Content Creator</h3>
-                    </div>
-                    <p class="experience-date">May 2023 - Present</p>
-                </div>
-                <h4 class="experience-company">Tutoriales de Dani @ YouTube</h4>
-                <ul class="experience-description">
-                    <li>Developed step-by-step video tutorials in Spanish on professional software tools, tailored to beginner and intermediate learners, generating over 500,000+ views</li>
-                </ul>
-            </div>
+      <div class="skills-playground">
+        <article class="skill-cluster skill-cluster--languages is-open" aria-label="Programming languages">
+          <button class="skill-hub" type="button" aria-label="Programming languages" aria-expanded="true" aria-controls="skills-code" title="Programming languages">
+            <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="m23 18-14 14 14 14m18-28 14 14-14 14M37 10 27 54" /></svg>
+            <span class="skill-toggle-mark" aria-hidden="true"></span>
+          </button>
+          <ul class="skill-orbit" id="skills-code" aria-label="Programming languages">
+            <li class="skill-item" style="--x: 0%; --y: -36%; --tilt: -7deg; --delay: 0ms; --stack-x: -21px; --stack-y: 18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="R">
+                <img src="images/skills-R.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">R</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: 25%; --y: -25%; --tilt: 5deg; --delay: 45ms; --stack-x: -15px; --stack-y: -18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="Python">
+                <img src="images/skills-Python.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">Python</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: 35%; --y: 0%; --tilt: -4deg; --delay: 90ms; --stack-x: -9px; --stack-y: 18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="Java">
+                <img src="images/skills-Java.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">Java</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: 25%; --y: 25%; --tilt: 8deg; --delay: 135ms; --stack-x: -3px; --stack-y: -18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="C">
+                <img src="images/skills-C.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">C</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: 0%; --y: 36%; --tilt: -5deg; --delay: 180ms; --stack-x: 3px; --stack-y: 18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="HTML">
+                <img src="images/skills-HTML.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">HTML</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: -25%; --y: 25%; --tilt: 4deg; --delay: 225ms; --stack-x: 9px; --stack-y: -18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="CSS">
+                <img src="images/skills-CSS.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">CSS</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: -35%; --y: 0%; --tilt: -6deg; --delay: 270ms; --stack-x: 15px; --stack-y: 18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="JavaScript">
+                <img src="images/skills-JavaScript.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">JavaScript</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: -25%; --y: -25%; --tilt: 3deg; --delay: 315ms; --stack-x: 21px; --stack-y: -18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="SQL">
+                <img src="images/skills-SQL.png" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">SQL</span>
+              </span>
+            </li>
+          </ul>
+        </article>
 
-            <!-- Web Designer -->
-            <div class="experience-box">
-                <div class="experience-header">
-                    <div class="experience-title-group">
-                    <img src="images/icon-mouse.svg" alt="Laptop logo" class="experience-logo">
-                    <h3 class="experience-title">Web Designer</h3>
-                    </div>
-                    <p class="experience-date">Feb 2023</p>
-                </div>
-                <h4 class="experience-company">Treasurehunting.tv</h4>
-                <ul class="experience-description">
-                    <li>Redesigned website architecture and interface using WordPress for improved user experience and accessibility</li>
-                    <li>Improved search visibility and metadata by optimizing meta titles, descriptions, and header tags</li>
-                    <li>Implemented internal linking and alt text for images to guide users to related content and improve SEO</li>
-            </div>
+        <article class="skill-cluster is-open" aria-label="Libraries and frameworks">
+          <button class="skill-hub" type="button" aria-label="Libraries and frameworks" aria-expanded="true" aria-controls="skills-data" title="Libraries and frameworks">
+            <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M10 10v44h44M16 41l11-14 12 7 13-19" /><circle cx="27" cy="27" r="3" /><circle cx="39" cy="34" r="3" /><circle cx="52" cy="15" r="3" /></svg>
+            <span class="skill-toggle-mark" aria-hidden="true"></span>
+          </button>
+          <ul class="skill-orbit" id="skills-data" aria-label="Libraries and frameworks">
+            <li class="skill-item" style="--x: -25%; --y: -25%; --tilt: -7deg; --delay: 0ms; --stack-x: -9px; --stack-y: 18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="tidyverse">
+                <img src="images/skills-tidyverse.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">tidyverse</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: 25%; --y: -25%; --tilt: 5deg; --delay: 45ms; --stack-x: -3px; --stack-y: -18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="ggplot2">
+                <img src="images/skills-ggplot2.png" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">ggplot2</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: -25%; --y: 25%; --tilt: -4deg; --delay: 90ms; --stack-x: 3px; --stack-y: 18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="igraph">
+                <img src="images/skills-igraph.png" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">igraph</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: 25%; --y: 25%; --tilt: 8deg; --delay: 135ms; --stack-x: 9px; --stack-y: -18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="React">
+                <img src="images/skills-React.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">React</span>
+              </span>
+            </li>
+          </ul>
+        </article>
 
-            <!-- Content Creator (Magenta Media) -->
-            <div class="experience-box">
-                <div class="experience-header">
-                    <div class="experience-title-group">
-                    <a href="https://www.youtube.com/@magentamedia" target="_blank">
-                    <img src="images/icon-youtube.svg" alt="YouTube logo" class="experience-logo">
-                    </a>
-                    <h3 class="experience-title">Content Creator</h3>
-                    </div>
-                    <p class="experience-date">Nov 2022 - Present</p>
-                </div>
-                <h4 class="experience-company">Magenta Media @ YouTube</h4>
-                <ul class="experience-description">
-                    <li>Conduct research on trending topics and create a script with a storyline</li>
-                    <li>Compile media and voiceover into an engaging video, add effects using Adobe Premiere Pro and After Effects</li>
-                    <li>Gained 160,000+ subscribers and 120,000,000+ views</li>
-                </ul>
-            </div>
-            
-            <!-- Sticker Competition -->
-            <div class="experience-box">
-                <div class="experience-header">
-                    <div class="experience-title-group">
-                    <a href="https://www.instagram.com/p/DQm0PhxASBH/?img_index=1" target="_blank">
-                    <img src="images/icon-uwmadison.svg" alt="UW-Madison logo" class="experience-logo">
-                    </a>
-                    <h3 class="experience-title">Graphic Designer</h3>
-                    </div>
-                    <p class="experience-date">Sep 2025</p>
-                </div>
-                <h4 class="experience-company">School of Computer, Data, & Information Sciences</h4>
-                <ul class="experience-description">
-                    <li>Chosen as one of the winners of the sticker competition celebrating the grand opening of Morgridge Hall, the new home of the School of Computer, Data & Information Sciences at the University of Wisconsin-Madison</li>
-                </ul>
-            </div>
+        <article class="skill-cluster is-open" aria-label="Platforms and tools">
+          <button class="skill-hub" type="button" aria-label="Platforms and tools" aria-expanded="true" aria-controls="skills-web" title="Platforms and tools">
+            <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="m32 8 24 13-24 13L8 21 32 8Zm-24 24 24 13 24-13M8 43l24 13 24-13" /></svg>
+            <span class="skill-toggle-mark" aria-hidden="true"></span>
+          </button>
+          <ul class="skill-orbit" id="skills-web" aria-label="Platforms and tools">
+            <li class="skill-item" style="--x: -29%; --y: -10%; --tilt: -7deg; --delay: 0ms; --stack-x: -3px; --stack-y: 18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="WordPress">
+                <img src="images/skills-WordPress.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">WordPress</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: 29%; --y: 10%; --tilt: 5deg; --delay: 45ms; --stack-x: 3px; --stack-y: -18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="Docker">
+                <img src="images/skills-Docker.png" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">Docker</span>
+              </span>
+            </li>
+          </ul>
+        </article>
 
-            <!-- Marketing Coordinator -->
-            <div class="experience-box">
-                <div class="experience-header">
-                    <div class="experience-title-group">
-                    <a href="https://www.cancuncare.com/" target="_blank">
-                    <img src="images/icon-cancuncare.svg" alt="Cancuncare logo" class="experience-logo">
-                    </a>
-                    <h3 class="experience-title">Marketing Coordinator</h3>
-                    </div>
-                    <p class="experience-date">Nov 2022 - Aug 2024</p>
-                </div>
-                <h4 class="experience-company">Cancuncare</h4>
-                <ul class="experience-description">
-                    <li>Consistently created infographics to promote resorts and tourist activities in Cancun for Cancuncare</li>
-                    <li>Distributed deliverables on social media including a monthly email newsletter to 8,000+ recipients resulting in increased exposure</li>
-                    <li>Filtered and maintained a clean recipient list ensuring an engaged audience profile</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <div class="divider"></div>
-    <section id="skills-section">
-        <h2>Design Tools</h2>
-        <div class="skills-container">
-            <i class="devicon-wordpress-plain"></i>
-            <i class="devicon-illustrator-plain"></i>
-            <i class="devicon-photoshop-plain"></i>
-            <i class="devicon-premierepro-plain"></i>
-            <i class="devicon-aftereffects-plain"></i>
-        </div>
-    </section>
-
-    <!-- Personal Section
-    <div class="divider"></div>
-    <section id="personal-section">
-        <h2>Personal</h2>
-        <p>Write content here and enable "personal" in the navigation section</p>
-        </div>
+        <article class="skill-cluster is-open" aria-label="Graphic design">
+          <button class="skill-hub" type="button" aria-label="Graphic design" aria-expanded="true" aria-controls="skills-design" title="Graphic design">
+            <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M10 48c0-38 44-38 44 0M10 16h44M32 12v8" /><circle cx="10" cy="16" r="3" /><circle cx="54" cy="16" r="3" /><path d="M6 44h8v8H6zm44 0h8v8h-8z" /></svg>
+            <span class="skill-toggle-mark" aria-hidden="true"></span>
+          </button>
+          <ul class="skill-orbit" id="skills-design" aria-label="Graphic design">
+            <li class="skill-item" style="--x: 0%; --y: -32%; --tilt: -7deg; --delay: 0ms; --stack-x: -12px; --stack-y: 18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="Adobe Illustrator">
+                <img src="images/skills-AI.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">Adobe Illustrator</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: 30%; --y: -10%; --tilt: 5deg; --delay: 45ms; --stack-x: -6px; --stack-y: -18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="Adobe Photoshop">
+                <img src="images/skills-PS.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">Adobe Photoshop</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: 19%; --y: 28%; --tilt: -4deg; --delay: 90ms; --stack-x: 0px; --stack-y: 18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="Adobe After Effects">
+                <img src="images/skills-AE.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">Adobe After Effects</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: -19%; --y: 28%; --tilt: 8deg; --delay: 135ms; --stack-x: 6px; --stack-y: -18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="Adobe InDesign">
+                <img src="images/skills-ID.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">Adobe InDesign</span>
+              </span>
+            </li>
+            <li class="skill-item" style="--x: -30%; --y: -10%; --tilt: -5deg; --delay: 180ms; --stack-x: 12px; --stack-y: 18px">
+              <span class="skill-chip" tabindex="0" role="img" aria-label="Adobe Premiere Pro">
+                <img src="images/skills-PR.svg" alt="" width="56" height="56" loading="lazy" />
+                <span class="skill-tooltip" aria-hidden="true">Adobe Premiere Pro</span>
+              </span>
+            </li>
+          </ul>
+        </article>
+      </div>
     </section> -->
 
-    <!-- Swiper JS -->
-    <footer>
-        <p>&copy; <span id="year"></span> Daniella Wright. All Rights Reserved.</p>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Automatically update the copyright year
-            document.getElementById('year').textContent = new Date().getFullYear();
-    
-            // Initialize Swiper
-            const swiper = new Swiper(".card-swiper", {
-                centeredSlides: false,
-                spaceBetween: 0,
-                slidesPerView: 'auto'
-            });
-            const drawerToggle = document.querySelector(".drawer-toggle");
-            const aboutDrawer = document.querySelector(".about-drawer");
+    <!-- DESIGN -->
+    <section class="section" id="design">
+      <div class="section-heading"><h2>Graphic Design</h2></div>
 
-            if (drawerToggle && aboutDrawer) {
-            drawerToggle.addEventListener("click", function () {
-            aboutDrawer.classList.toggle("open");
-            });
-            }
-        });
-    </script>
-  </body>
+      <div class="design-gallery">
+        <figure class="design-piece" style="--design-ratio: 80 / 29">
+          <div class="design-frame"><img src="images/art-02.jpg" alt="Container environments" loading="lazy" /></div>
+          <figcaption>Container environments</figcaption>
+        </figure>
+
+        <figure class="design-piece" style="--design-ratio: 1 / 1">
+          <div class="design-frame"><img src="images/art-04.png" alt="Letterform study" loading="lazy" /></div>
+          <figcaption>Letterform study</figcaption>
+        </figure>
+
+        <figure class="design-piece" style="--design-ratio: 16 / 9">
+          <div class="design-frame"><img src="images/art-07.png" alt="Research computing" loading="lazy" /></div>
+          <figcaption>Research computing</figcaption>
+        </figure>
+
+        <figure class="design-piece" style="--design-ratio: 20 / 9">
+          <div class="design-frame"><img src="images/art-06.jpg" alt="From script to job" loading="lazy" /></div>
+          <figcaption>From script to job</figcaption>
+        </figure>
+
+        <figure class="design-piece" style="--design-ratio: 11 / 17">
+          <div class="design-frame"><img src="images/art-05.png" alt="Missing Badger" loading="lazy" /></div>
+          <figcaption>Missing Badger</figcaption>
+        </figure>
+
+        <figure class="design-piece" style="--design-ratio: 8 / 5">
+          <div class="design-frame"><img src="images/art-03.jpg" alt="Inside the logs" loading="lazy" /></div>
+          <figcaption>Inside the logs</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Copyright © 2026 Daniella Wright</p>
+    <nav class="footer-links" aria-label="Social and contact links">
+      <a class="social-link" href="https://github.com/daniellawright" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+        <img class="social-icon" src="images/icon-github.svg" alt="" width="40" height="40" />
+      </a>
+      <a class="social-link" href="https://www.linkedin.com/in/daniella-wright" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+        <img class="social-icon" src="images/icon-linkedin.svg" alt="" width="40" height="40" />
+      </a>
+      <a class="social-link" href="mailto:wrightnogueda@wisc.edu" aria-label="Email Daniella" title="Email">
+        <img class="social-icon" src="images/icon-email.svg" alt="" width="40" height="40" />
+      </a>
+    </nav>
+  </footer>
+</body>
 </html>

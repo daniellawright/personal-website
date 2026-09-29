@@ -89,16 +89,14 @@ a {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: var(--accent);
-  font: 700 0.82rem/1 "Comfortaa", sans-serif;
-  letter-spacing: 0;
   flex-shrink: 0;
   transition: transform 180ms ease;
 }
 
-.logo-mark {
+.logo img {
   display: block;
-  transform: translateY(1.5px);
+  width: 100%;
+  height: 100%;
 }
 
 .header-actions {

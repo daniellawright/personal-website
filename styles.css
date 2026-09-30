@@ -425,6 +425,13 @@ a {
   align-self: center;
 }
 
+.role-connector {
+  display: block;
+  flex-shrink: 0;
+  margin: 14px 0;
+  color: #000;
+}
+
 .company-logo {
   width: 40px;
   height: 40px;

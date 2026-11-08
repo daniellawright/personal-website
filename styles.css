@@ -1191,3 +1191,31 @@ a {
   outline: 2px solid var(--accent-solid);
   outline-offset: 4px;
 }
+
+/* Nyan cat flyover on first load */
+.nyan-lane {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden; /* no horizontal scrollbar while the cat exits */
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.nyan-cat {
+  display: block;
+  width: 96px;
+  height: auto;
+  image-rendering: pixelated;
+  transform: translateX(-110%);
+  animation: nyan-fly 6s linear forwards;
+}
+
+@keyframes nyan-fly {
+  from { transform: translateX(-110%); }
+  to { transform: translateX(100vw); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nyan-cat { display: none; }
+}

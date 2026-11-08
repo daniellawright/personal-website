@@ -1,18 +1,12 @@
-# Daniella Wright's Portfolio!
+# Daniella's Portfolio!
 
-<br>
-
-<img src="images/nyan-cat-rainbow.gif" alt="Nyan Cat flying with a rainbow trail" width="250" />
-
-<br>
-
-(Mostly) hand-built, framework-free site that shares my experience, research, projects, press, skills, and graphic design work. I plan to keep adding to it as I take on new projects!
+<a href="https://daniellawright.com"><img src="https://img.shields.io/badge/-Visit%20my%20website%20%E2%86%92-beb7df?style=for-the-badge" alt="Visit my website" /></a>
 
 <img src="https://skillicons.dev/icons?i=html,css,js,figma&theme=light" alt="HTML, CSS, JavaScript and Figma" />
 
-<br>
+(Mostly) hand-built, framework-free site that shares my experience, research, projects, press, skills, and graphic design work. I plan to keep adding to it as I take on new projects!
 
-<a href="https://daniellawright.com"><img src="https://img.shields.io/badge/-Visit%20my%20website%20%E2%86%92-beb7df?style=for-the-badge" alt="Visit my website" /></a>
+<img src="images/nyan-cat-rainbow.gif" alt="Nyan Cat flying with a rainbow trail" width="250" />
 
 ## Project structure
 
